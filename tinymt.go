@@ -1,4 +1,4 @@
-package gotinymt
+package GoTinyMT
 
 import "math"
 
