@@ -22,7 +22,7 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
    go get github.com/aidenfoxivey/GoTinyMT
    ```
 
-4. Import the package in your code:
+3. Import the package in your code:
 
    ```go
    import (
@@ -32,7 +32,7 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
    )
    ```
 
-5. Seed the Mersenne Twister generator with an initial value or an array of values:
+4. Seed the Mersenne Twister generator with an initial value or an array of values:
 
    ```go
    seed := uint32(12345)
@@ -43,7 +43,7 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
    mt := TinyMT32.InitArray(seedArray)
    ```
 
-6. Generate pseudorandom numbers:
+5. Generate pseudorandom numbers:
 
    ```go
    randNum := mt.Generate_uint32() // Generate a 32-bit unsigned random number
