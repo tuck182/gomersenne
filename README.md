@@ -7,7 +7,7 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
 ## Features
 
 - Efficient and compact implementation of the Tiny Mersenne Twister algorithm in Go.
-- Provides high-quality pseudorandom numbers with a long period of 2^127-1.
+- Provides high-quality pseudorandom numbers with a period of 2^127-1.
 - Supports both seeding with a single value and seeding with an array of values.
 - Easy integration with existing Go projects.
 - Only standard library usage - because why would you want more dependencies?
