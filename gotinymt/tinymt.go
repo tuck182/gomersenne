@@ -1,5 +1,8 @@
-package main
+package gotinymt
 
+import "math"
+
+// tinyMT constants
 const MIN_LOOP = 8
 const PRE_LOOP = 8
 const TINYMT32_MEXP = 127
@@ -100,20 +103,14 @@ func (rng *TinyMT32) temperConvOpen() float32 {
 	}
 	return float32(tmp)
 }
+
 func (rng *TinyMT32) Generate_uint32() uint32 {
 	rng.NextState()
 	return rng.temper()
 }
+
 func (rng *TinyMT32) Generate_float() float32 {
 	rng.NextState()
-	return rng.temperConv()
-}
 
-func main() {
-	var rng TinyMT32
-	rng.Init(32)
-
-	for i := 0; i < 10; i++ {
-		println(rng.Generate_uint32())
-	}
+	return rng.temperConv() / float32(math.Pow(10, 9))
 }
