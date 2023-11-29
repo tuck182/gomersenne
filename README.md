@@ -17,7 +17,7 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
 1. Start by installing Go and setting up your development environment.
 
 2. Add the `mersennetwister` package to your project:
-   
+
    ```bash
    go get github.com/aidenfoxivey/GoTinyMT
    ```
@@ -51,4 +51,4 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
 
 ## License
 
-This project is licensed under the 3 clause BSD license. 
+This project is licensed under the 3 clause BSD license.
