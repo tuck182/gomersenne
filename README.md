@@ -18,7 +18,9 @@ This project is a minimalistic implementation of the Mersenne Twister pseudorand
 
 2. Add the `mersennetwister` package to your project:
    
-   `go get github.com/aidenfoxivey/GoTinyMT`
+   ```bash
+   go get github.com/aidenfoxivey/GoTinyMT
+   ```
 
 4. Import the package in your code:
 
