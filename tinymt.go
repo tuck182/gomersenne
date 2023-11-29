@@ -1,4 +1,4 @@
-package GoTinyMT
+package GoMersenne
 
 import "math"
 
