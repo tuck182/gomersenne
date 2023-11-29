@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	tinymt32 "github.com/aidenfoxivey/gomersenne/tinymt"
+	tinymt32 "github.com/aidenfoxivey/gomersenne/mt"
 )
 
 func TestRNG(t *testing.T) {
