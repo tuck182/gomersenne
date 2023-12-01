@@ -20,7 +20,10 @@ type TinyMT32 struct {
 }
 
 func (rng *TinyMT32) periodCertification() {
-	if ((rng.status[0] & TINYMT32_MASK) == 0) && (rng.status[1] == 0) && (rng.status[2] == 0) && (rng.status[3] == 0) {
+	if ((rng.status[0] & TINYMT32_MASK) == 0) &&
+		(rng.status[1] == 0) &&
+		(rng.status[2] == 0) &&
+		(rng.status[3] == 0) {
 		rng.status[0] = 'T'
 		rng.status[1] = 'I'
 		rng.status[2] = 'N'
@@ -90,6 +93,7 @@ func (rng *TinyMT32) temperConv() float32 {
 	}
 	return float32(tmp)
 }
+
 func (rng *TinyMT32) temperConvOpen() float32 {
 	var t0, t1, tmp uint32
 
