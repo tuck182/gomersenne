@@ -2,7 +2,6 @@ package mt
 
 import "math"
 
-// tinyMT constants
 const MIN_LOOP = 8
 const PRE_LOOP = 8
 const TINYMT32_MEXP = 127
