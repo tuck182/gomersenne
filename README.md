@@ -1,6 +1,9 @@
 # Tiny Mersenne Twister Implementation in Go
 
-This project is a minimalistic implementation of the Mersenne Twister pseudorandom number generator (PRNG) in Go. The Mersenne Twister algorithm, developed by Makoto Matsumoto and Takuji Nishimura, is a widely-used PRNG known for its long period and excellent statistical properties.
+This project is a minimalistic implementation of the Mersenne Twister
+pseudorandom number generator (PRNG) in Go. The Mersenne Twister algorithm,
+developed by Makoto Matsumoto and Takuji Nishimura, is a widely-used PRNG known
+for its long period and excellent statistical properties.
 
 [Original TinyMT Page](http://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/TINYMT/)
 
