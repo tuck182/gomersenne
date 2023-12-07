@@ -1,9 +1,24 @@
 {
-	"folders":
-	[
+	"folders": [
 		{
 			"path": ".",
-			"binary_file_patterns": ["gomersenne"]
+			"binary_file_patterns": [
+				"gomersenne"
+			]
 		}
 	],
+	"build_systems": [
+		{
+			"name": "GoTinyMT",
+			"cmd": [
+				"go",
+				"build",
+				"-v",
+				"-x",
+				"-buildvcs",
+			],
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"selector": "source.go"
+		}
+	]
 }

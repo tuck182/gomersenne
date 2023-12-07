@@ -11,6 +11,11 @@ const TINYMT32_SH8 = 8
 const TINYMT32_MASK = 0x7fffffff
 const TINYMT32_MUL = float32(1.0 / 16777216.0)
 
+// A 32 bit implementation of the TinyMT mersenne twister
+//
+// Details found in RFC8682: https://datatracker.ietf.org/doc/rfc8682/
+//
+// Original website is https://www.math.sci.hiroshima-u.ac.jp/m-mat/MT/TINYMT/
 type TinyMT32 struct {
 	status [4]uint32
 	mat1   uint32
@@ -30,6 +35,7 @@ func (rng *TinyMT32) periodCertification() {
 	}
 }
 
+// Initializes the tiny mersenne twister.
 func (rng *TinyMT32) Init(seed uint32) {
 	var i, top uint32 = 1, MIN_LOOP
 	rng.status[0] = seed
@@ -46,6 +52,8 @@ func (rng *TinyMT32) Init(seed uint32) {
 		rng.NextState()
 	}
 }
+
+// Advances the tiny mersenne twister to its next state.
 func (rng *TinyMT32) NextState() {
 	var x, y, a, b uint32
 
