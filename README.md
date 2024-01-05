@@ -13,7 +13,15 @@ for its long period and excellent statistical properties.
 - Provides high-quality pseudorandom numbers with a period of 2^127-1.
 - Supports both seeding with a single value and seeding with an array of values.
 - Easy integration with existing Go projects.
-- Only standard library usage - because why would you want more dependencies?
+- Standard library Go.
+
+## How does prediction work?
+
+PRNGs (Pseudo Random Number Generators) come in different sorts. Similar to hash
+functions, some have the use of being "utility" focused, whereas others are
+cryptographically secure.
+
+In particular, f
 
 ## Usage
 
