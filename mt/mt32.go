@@ -46,3 +46,7 @@ func (rng *MT32) generate_numbers() {
 func Find_seed(prior []uint32) {
 	println(len(prior))
 }
+
+func untempering() {
+
+}

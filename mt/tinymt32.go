@@ -1,6 +1,9 @@
 package mt
 
-import "math"
+import (
+	"math"
+	"unsafe"
+)
 
 const MIN_LOOP = 8
 const PRE_LOOP = 8
@@ -124,4 +127,9 @@ func (rng *TinyMT32) Generate_float() float32 {
 	rng.NextState()
 
 	return rng.temperConv() / float32(math.Pow(10, 9))
+}
+
+// Returns the state buffer size in terms of bytes.
+func (rng *TinyMT32) State_buffer_size() uintptr {
+	return unsafe.Sizeof(rng.status)
 }
