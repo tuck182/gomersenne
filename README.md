@@ -30,7 +30,7 @@ In particular, f
 2. Add the `mersennetwister` package to your project:
 
    ```bash
-   go get github.com/aidenfoxivey/GoTinyMT
+   go get github.com/tuck182/gomersenne
    ```
 
 3. Import the package in your code:
@@ -39,7 +39,7 @@ In particular, f
    import (
       "fmt"
 
-      "github.com/aidenfoxivey/GoTinyMT"
+      "github.com/tuck182/gomersenne"
    )
    ```
 
