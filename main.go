@@ -2,7 +2,7 @@ package main
 
 import (
 	// "fmt"
-	tinymt32 "github.com/aidenfoxivey/gomersenne/mt"
+	tinymt32 "github.com/tuck182/gomersenne/mt"
 	// "time"
 	"flag"
 	"os"
